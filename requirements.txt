@@ -1,13 +1,4 @@
 asgiref==3.8.1
 Django==5.0.6
+django-model-utils==4.5.1
 sqlparse==0.5.0
-
-#Primero, instala pipreqs si aún no lo has hecho:
-#pip install pipreqs
-
-#Luego, dentro de tu entorno virtual, ejecuta:
-#pipreqs /ruta/a/tu/proyecto
-
-
-#pip install -r requirements.txt
-#Este comando le dice a pip que instale todas las dependencias especificadas en el archivo requirements.txt en tu entorno actual. 
