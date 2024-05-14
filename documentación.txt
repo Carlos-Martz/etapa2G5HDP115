@@ -13,6 +13,9 @@ sqlparse==0.5.0
 #Este comando le dice a pip que instale todas las dependencias especificadas en el archivo requirements.txt en tu entorno actual. 
 
 
-python -m pip freeze
+python3 -m pip freeze
 python -m pip freeze > requirements.txt
 python -m pip install -r requirements.txt
+
+
+python3 -m django --version
