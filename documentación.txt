@@ -14,8 +14,72 @@ sqlparse==0.5.0
 
 
 python3 -m pip freeze
-python -m pip freeze > requirements.txt
-python -m pip install -r requirements.txt
+python3 -m pip freeze > requirements.txt
+python3 -m pip install -r requirements.txt
 
 
 python3 -m django --version
+
+
+django-admin startproject etapa2g5hdp115 .
+
+
+Si deseas instalar `pipx` solo para gestionar el entorno virtual de Python (`virtualenv`) en un repositorio específico donde planeas desarrollar un proyecto de Django, te recomendaría seguir estos pasos:
+
+1. **Instalar pipx**: Puedes instalar `pipx` de forma global en tu sistema, ya que es una herramienta útil para gestionar paquetes y herramientas de Python de manera aislada. Esto te permitirá usar `pipx` para instalar `virtualenv` y otras herramientas necesarias.
+
+   ```bash
+   brew install pipx
+   ```
+
+2. **Instalar virtualenv con pipx**: Después de instalar `pipx`, puedes usarlo para instalar `virtualenv` de manera aislada en tu entorno de proyecto. Esto asegura que `virtualenv` esté disponible solo para ese proyecto específico y no afecte a otros proyectos o al entorno global del sistema.
+
+   ```bash
+   pipx install virtualenv
+   ```
+
+3. **Crear un entorno virtual para tu proyecto Django**: Una vez que `virtualenv` esté instalado, puedes crear un entorno virtual para tu proyecto de Django dentro del directorio del proyecto. Esto aislará las dependencias del proyecto y te permitirá instalar Django y otras dependencias específicas para ese proyecto sin afectar al entorno global del sistema.
+
+   ```bash
+   cd tu_proyecto_django
+   virtualenv venv
+   ```
+
+4. **Activar el entorno virtual**: Después de crear el entorno virtual, actívalo para comenzar a trabajar en tu proyecto. Esto configurará tu sesión de terminal para que utilice las versiones de Python y las bibliotecas instaladas en el entorno virtual en lugar del sistema global.
+
+   ```bash
+   source venv/bin/activate
+   ```
+
+5. **Instalar Django y otras dependencias**: Una vez que el entorno virtual esté activado, puedes usar `pip` (que viene incluido con `virtualenv`) para instalar Django y cualquier otra dependencia específica de tu proyecto.
+
+   ```bash
+   pip install django
+   ```
+
+Siguiendo estos pasos, tendrás un entorno virtual de Python (`virtualenv`) configurado específicamente para tu proyecto de Django, lo que te permitirá desarrollar y gestionar las dependencias de forma aislada y sin afectar al entorno global del sistema.
+
+
+Sí, también puedes usar `virtualenv` para crear un entorno virtual en lugar de `python3 -m venv`. Ambos métodos son válidos y funcionan de manera similar. Aquí está el equivalente con `virtualenv`:
+
+1. Para crear un entorno virtual con `virtualenv`, ejecuta el siguiente comando en tu terminal:
+
+```
+virtualenv myenv
+```
+
+Donde `myenv` es el nombre que le quieres dar al entorno virtual.
+
+2. Luego, activa el entorno virtual. En sistemas Unix o MacOS, puedes hacerlo con:
+
+```
+source venv/bin/activate
+```
+
+En Windows, usa:
+
+```
+myenv\Scripts\activate
+```
+
+El resto de los pasos para instalar los paquetes y trabajar en tu proyecto serán los mismos que mencioné anteriormente.
