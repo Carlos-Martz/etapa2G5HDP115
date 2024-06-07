@@ -1,0 +1,47 @@
+<nav>
+  <div class="menu-icon">
+    <span>&#9776;</span> <!-- Icono de tres líneas -->
+  </div>
+  <ul class="menu">
+    <li><a href="{% url 'index' %}">Inicio</a></li>
+    <li><a href="{% url 'inheritance' %}">Herencia</a></li>
+    <li><a href="{% url 'otra' %}">Otra</a></li>
+    <li><a href="{% url 'ejemplo' %}">Ejemplos</a></li>
+  </ul>
+</nav>
+
+<!--
+<style>
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+  }
+  .menu {
+    list-style: none;
+    display: none;
+    padding: 0;
+  }
+  .menu li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ddd;
+  }
+  .menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+  }
+  
+</style>
+<script>
+  document.querySelector('.menu-icon').addEventListener('click', function() {
+    var menu = document.querySelector('.menu');
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  });
+</script>
+-->

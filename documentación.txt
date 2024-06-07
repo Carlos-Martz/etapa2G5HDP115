@@ -23,6 +23,7 @@ python3 -m django --version
 
 django-admin startproject etapa2g5hdp115 .
 
+python manage.py runserver
 
 Si deseas instalar `pipx` solo para gestionar el entorno virtual de Python (`virtualenv`) en un repositorio específico donde planeas desarrollar un proyecto de Django, te recomendaría seguir estos pasos:
 
@@ -83,3 +84,15 @@ myenv\Scripts\activate
 ```
 
 El resto de los pasos para instalar los paquetes y trabajar en tu proyecto serán los mismos que mencioné anteriormente.
+
+
+Runserver:
+
+django-admin startproject etapa2g5hdp115
+
+python manage.py migrate
+
+python manage.py runserver
+
+
+
