@@ -66,10 +66,10 @@ Sí, también puedes usar `virtualenv` para crear un entorno virtual en lugar de
 1. Para crear un entorno virtual con `virtualenv`, ejecuta el siguiente comando en tu terminal:
 
 ```
-virtualenv myenv
+virtualenv venv
 ```
 
-Donde `myenv` es el nombre que le quieres dar al entorno virtual.
+Donde `venv` es el nombre que le quieres dar al entorno virtual.
 
 2. Luego, activa el entorno virtual. En sistemas Unix o MacOS, puedes hacerlo con:
 

@@ -1,0 +1,109 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Registrarse {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+    <div class="content">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-md-6 mt-5 offset-md-3 pt-5 mt-5">
+                    <div class="card">
+                        <div class="card-header text-center py-4">
+                            <h4 class="title">
+                                Regístrate
+                            </h4>
+
+                            <h6 class="card-category">
+                                {% if msg %}
+                                    <span class="text-danger">{{ msg | safe }}</span>
+                                {% else %}
+                                    <span>
+                                        Añada sus credenciales
+                                    </span>
+                                {% endif %}  
+                            </h6>     
+
+                        </div>
+
+                        {% if success %}
+
+                            <div class="card-footer text-center">
+                                <a href="{% url 'login' %}" 
+                                   class="btn btn-fill btn-primary">Inicio de sesión</a>
+                            </div>
+
+                        {% else %}
+
+                            <form role="form" method="post" action="">
+            
+                                {% csrf_token %}
+
+                                <div class="card-body px-5 py-3">
+
+                                    <div class="row">
+                                        <div class="col-md-12 px-md-1">
+                                            <div class="form-group">
+                                                <label>Nombre de usuario</label>
+                                                {{ form.username }}
+                                            </div>
+                                            <span class="text-danger">{{ form.username.errors }}</span>
+                                        </div>
+
+                                        <div class="col-md-12 px-md-1">
+                                            <div class="form-group">
+                                                <label>Correo electrónico</label>
+                                                {{ form.email }}
+                                            </div>
+                                            <span class="text-danger">{{ form.email.errors }}</span>
+                                        </div>
+
+                                        <div class="col-md-12 px-md-1">
+                                            <div class="form-group">
+                                                <label>Contraseña</label>
+                                                {{ form.password1 }}
+                                            </div>
+                                            <span class="text-danger">{{ form.password1.errors }}</span>
+                                        </div>
+
+                                        <div class="col-md-12 px-md-1">
+                                            <div class="form-group">
+                                                <label>Comprobación de contraseña</label>
+                                                {{ form.password2 }}
+                                            </div>
+                                            <span class="text-danger">{{ form.password2.errors }}</span>
+                                        </div>                                        
+
+                                    </div>
+
+                                    
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button type="submit" name="register" class="btn btn-fill btn-info">Registrarse</button>
+
+                                    <br /><br />
+                                    
+                                    <p>
+                                        ¿Tiene una cuenta? <a href="{% url 'login' %}" class="text-info">Inicio de sesión</a>
+                                    </p> 
+                                </div>
+                            
+                            </form>
+
+                        {% endif %} 
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
