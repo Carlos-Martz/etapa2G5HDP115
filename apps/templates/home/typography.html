@@ -1,11 +1,63 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Análisis {% endblock %} 
+{% block title %} Evolución {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
 
-{% block content %}{% endblock content %}
+{% block content %}
+
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card ">
+          <div class="card-header">
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table tablesorter " id="">
+                <thead class=" text-primary" style="text-align: center;">
+                  <tr>
+                    <th>Año</th>
+                    <th>Evolución del Desempleo en El Salvador</th>
+                    
+                  </tr>
+                </thead>
+                <tbody style="text-align: left;">
+                  <tr>
+                      <td>2018</td>
+                      <td>Se proyectó que la tasa de desempleo alcanzaría el 9.5%, lo que situaría a El Salvador como el tercer país con la tasa de desempleo más alta en Centroamérica. Aunque se observó una ligera disminución en la tasa de desempleo según la EHPM, el desempleo seguía siendo preocupante, especialmente entre los jóvenes. La falta de acceso a la seguridad social también seguía afectando a una gran parte de la población económicamente activa.</td>
+                  </tr>
+                  <tr>
+                      <td>2019</td>
+                      <td>La Encuesta de Hogares de Propósitos Múltiples (EHPM) reportó una tasa de desempleo del 6.3%. Sin embargo, estos datos pueden no reflejar completamente la realidad debido a la falta de inclusión del desempleo informal o subempleo. Además, se observó una disminución en la población en edad de trabajar y en la población económicamente activa, lo que podría indicar un deterioro en las oportunidades laborales.</td>
+                  </tr>
+                  <tr>
+                      <td>2020</td>
+                      <td>La economía salvadoreña experimentó una significativa caída del 7.9%, lo que confirmó la entrada del país en una recesión. Este declive económico estuvo acompañado de una pérdida considerable de empleos, tanto en el sector formal como en el informal, lo que contribuyó a una disminución en el consumo familiar y un aumento en la pobreza. A pesar de algunos sectores que registraron crecimiento, como el financiero y la salud, la economía en su conjunto se vio afectada negativamente.</td>
+                  </tr><tr>
+                    <td>2021</td>
+                    <td>Se proyectó que la tasa de desempleo alcanzaría el 9.5%, lo que situaría a El Salvador como el tercer país con la tasa de desempleo más alta en Centroamérica. Aunque se observó una ligera disminución en la tasa de desempleo según la EHPM, el desempleo seguía siendo preocupante, especialmente entre los jóvenes. La falta de acceso a la seguridad social también seguía afectando a una gran parte de la población económicamente activa.</td>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>A pesar de un crecimiento económico del 2.6%, se advirtió que la mayoría de las personas empleadas trabajaban en el sector informal y carecían de seguridad social. La alta tasa de dependencia efectiva también planteaba preocupaciones sobre el potencial de crecimiento económico del país y la calidad de los empleos.</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Se observó un notable aumento en el número de desempleados, con una tasa de desempleo que pasó del 5% al 5.2%. Esta tendencia preocupante en el mercado laboral salvadoreño se vio reflejada en las percepciones de la población, con un número significativo de personas que indicaron que su situación económica no mejoró debido a la falta de empleo. La Fundación Salvadoreña para el Desarrollo Económico y Social (FUSADES) señaló que el mercado laboral seguía siendo desafiante para los jóvenes, con aproximadamente 50,000 jóvenes que se incorporan al mercado laboral cada año y enfrentan dificultades para encontrar empleo formal.</td>
+              </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+{% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}

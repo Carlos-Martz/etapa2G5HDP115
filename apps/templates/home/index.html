@@ -3,9 +3,103 @@
 {% block title %} Inicio {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
-{% block stylesheets %}{% endblock stylesheets %}
+{% block stylesheets %}
+<style>
+  
+  .titulo { 
+    width: 100%;
+    height: 100%;
+    font-size: 4rem; 
+    font-weight: 700;
+    text-align: center;
+  }
 
-{% block content %}{% endblock content %}
+  .flex-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 570px;
+    margin-bottom: 0;
+  }
+
+  .image-container h3 {
+    position: absolute;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+
+  .image-container::before {
+    content: "";
+    background-image: url("{{ ASSETS_ROOT }}/img/517113.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  .card-body {
+    padding-top: 0; 
+    margin-top: -40px;
+  }
+
+  .row.mt-5 {
+    margin-top: 10px; 
+  }
+
+  .info-box {
+    margin-bottom: 0; 
+  }
+
+</style>
+{% endblock stylesheets %}
+{% block content %}
+  <div class="content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="image-container">
+            <h3 class="card-title titulo flex-centered" style="text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);">Impacto del desempleo en la economía del país durante los últimos 5 años</h3>
+          </div>
+          <div class="card-body">
+            <div class="row mt-5">
+              <div class="col-md-4">
+                <div class="info-box">
+                  <h5><b>Tendencias Históricas</b></h5>
+                  <p>Analizamos las tendencias históricas del desempleo en el país.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info-box">
+                  <h5><b>Soluciones Clave</b></h5>
+                  <p>Propuestas y soluciones para mitigar el impacto del desempleo.</p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="info-box">
+                  <h5><b>Beneficios de Políticas</b></h5>
+                  <p>Evaluación de los beneficios de las políticas implementadas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
 
 <!-- Specific Page JS goes HERE  -->
 {% block javascripts %}{% endblock javascripts %}
