@@ -11626,7 +11626,7 @@ table.tablesorter thead tr .headerSortDown {
   float: right;
   width: 100%;
   min-height: 100vh;
-  border-top: 2px solid #e14eca;
+  border-top: 2px solid #3165f4;
   background: linear-gradient(#1e1e2f, #1e1e24);
   transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1); }
   .main-panel[data="blue"] {
@@ -13234,8 +13234,8 @@ Copyright (c) 2015 Daniel Eden
       height: 100px;
       width: 250px; }
       .card-user .author .block.block-one {
-        background: rgba(225, 78, 202, 0.6);
-        background: linear-gradient(to right, rgba(225, 78, 202, 0.6) 0%, rgba(225, 78, 202, 0) 100%);
+        background: rgb(50, 90, 244);
+        background: linear-gradient(to right, rgb(50, 91, 244) 0%, rgba(225, 78, 202, 0) 100%);
         filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=10);
         transform: rotate(150deg);
         margin-top: -90px;

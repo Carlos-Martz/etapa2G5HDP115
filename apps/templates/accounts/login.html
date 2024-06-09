@@ -1,6 +1,6 @@
 {% extends "layouts/base-fullscreen.html" %}
 
-{% block title %} Login {% endblock %} 
+{% block title %} Inicio de sesión {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -15,7 +15,7 @@
                         
                         <div class="card-header text-center py-4">
                             <h4 class="title">
-                                Sign IN
+                                Entrar
                             </h4>
 
                             <h6 class="card-category">
@@ -23,7 +23,7 @@
                                   <span class="text-danger">{{ msg | safe }}</span>
                                 {% else %}
                                 <span>
-                                  Add your credentials
+                                    Añada sus credenciales
                                 </span>
                                 {% endif %}  
                             </h6>
@@ -38,14 +38,14 @@
                                 <div class="row">
                                     <div class="col-md-12 px-md-1">
                                         <div class="form-group">
-                                            <label>Username</label>
+                                            <label>Nombre de usuario</label>
                                             {{ form.username }}
                                         </div>
                                     </div>
 
                                     <div class="col-md-12 px-md-1">
                                         <div class="form-group">
-                                            <label>Password</label>
+                                            <label>Contraseña</label>
                                             {{ form.password }}
                                         </div>
                                     </div>
@@ -55,12 +55,12 @@
                             </div>
                             
                             <div class="card-footer text-center">
-                                <button type="submit" name="login" class="btn btn-fill btn-primary">Login</button>
+                                <button type="submit" name="login" class="btn btn-fill btn-info">Inicio de sesión</button>
                                 
                                 <br /><br />
 
                                 <p>
-                                    Don't have an account? <a href="{% url 'register' %}" class="text-primary">Register</a>                            
+                                    ¿No tiene cuenta? <a href="{% url 'register' %}" class="text-info">Registrarse</a>                            
                                 </p>
                             </div>
 

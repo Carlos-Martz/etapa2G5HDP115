@@ -1,6 +1,6 @@
 {% extends "layouts/base.html" %}
 
-{% block title %} Tables {% endblock %} 
+{% block title %} Estadísticas {% endblock %} 
 
 <!-- Specific Page CSS goes HERE  -->
 {% block stylesheets %}{% endblock stylesheets %}
@@ -12,125 +12,62 @@
       <div class="col-md-12">
         <div class="card ">
           <div class="card-header">
-            <h4 class="card-title"> Simple Table</h4>
+            <h4 class="card-title"> Tablas de Desempleo - El Salvador</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table tablesorter " id="">
-                <thead class=" text-primary">
+                <thead class=" text-primary" style="text-align: center;">
                   <tr>
-                    <th>
-                      Name
-                    </th>
-                    <th>
-                      Country
-                    </th>
-                    <th>
-                      City
-                    </th>
-                    <th class="text-center">
-                      Salary
-                    </th>
+                    <th>Año</th>
+                    <th>Total (%)</th>
+                    <th>Educación Avanzada (%)</th>
+                    <th>Educación Intermedia (%)</th>
+                    <th>Educación Básica (%)</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody style="text-align: center;">
                   <tr>
-                    <td>
-                      Dakota Rice
-                    </td>
-                    <td>
-                      Niger
-                    </td>
-                    <td>
-                      Oud-Turnhout
-                    </td>
-                    <td class="text-center">
-                      $36,738
-                    </td>
+                      <td>2018</td>
+                      <td>4.0</td>
+                      <td>6.6</td>
+                      <td>6.0</td>
+                      <td>3.8</td>
                   </tr>
                   <tr>
-                    <td>
-                      Minerva Hooper
-                    </td>
-                    <td>
-                      Curaçao
-                    </td>
-                    <td>
-                      Sinaai-Waas
-                    </td>
-                    <td class="text-center">
-                      $23,789
-                    </td>
+                      <td>2019</td>
+                      <td>4.1</td>
+                      <td>5.0</td>
+                      <td>6.2</td>
+                      <td>3.7</td>
                   </tr>
                   <tr>
-                    <td>
-                      Sage Rodriguez
-                    </td>
-                    <td>
-                      Netherlands
-                    </td>
-                    <td>
-                      Baileux
-                    </td>
-                    <td class="text-center">
-                      $56,142
-                    </td>
+                      <td>2020</td>
+                      <td>5.0</td>
+                      <td>6.4</td>
+                      <td>8.2</td>
+                      <td>3.4</td>
                   </tr>
                   <tr>
-                    <td>
-                      Philip Chaney
-                    </td>
-                    <td>
-                      Korea, South
-                    </td>
-                    <td>
-                      Overland Park
-                    </td>
-                    <td class="text-center">
-                      $38,735
-                    </td>
+                      <td>2021</td>
+                      <td>4.3</td>
+                      <td>5.7</td>
+                      <td>8.1</td>
+                      <td>4.0</td>
                   </tr>
                   <tr>
-                    <td>
-                      Doris Greene
-                    </td>
-                    <td>
-                      Malawi
-                    </td>
-                    <td>
-                      Feldkirchen in Kärnten
-                    </td>
-                    <td class="text-center">
-                      $63,542
-                    </td>
+                      <td>2022</td>
+                      <td>3.0</td>
+                      <td>6.1</td>
+                      <td>6.1</td>
+                      <td>3.6</td>
                   </tr>
                   <tr>
-                    <td>
-                      Mason Porter
-                    </td>
-                    <td>
-                      Chile
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-center">
-                      $78,615
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Jon Porter
-                    </td>
-                    <td>
-                      Portugal
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-center">
-                      $98,615
-                    </td>
+                      <td>2023</td>
+                      <td>2.7</td>
+                      <td>5.2</td>
+                      <td>4.0</td>
+                      <td>2.6</td>
                   </tr>
                 </tbody>
               </table>
@@ -139,128 +76,42 @@
         </div>
       </div>
       <div class="col-md-12">
-        <div class="card  card-plain">
+        <div class="card">
           <div class="card-header">
-            <h4 class="card-title"> Table on Plain Background</h4>
-            <p class="category"> Here is a subtitle for this table</p>
+            <h4 class="card-title"> Proporción de jóvenes sin educación, empleo ni capacitación (%)</h4>
           </div>
           <div class="card-body">
             <div class="table-responsive">
               <table class="table tablesorter " id="">
-                <thead class=" text-primary">
+                <thead class=" text-primary" style="text-align: center;">
                   <tr>
-                    <th>
-                      Name
-                    </th>
-                    <th>
-                      Country
-                    </th>
-                    <th>
-                      City
-                    </th>
-                    <th class="text-center">
-                      Salary
-                    </th>
-                  </tr>
+                    <th>Año</th>
+                    <th>(%)</th>
                 </thead>
-                <tbody>
+                <tbody style="text-align: center;">
                   <tr>
-                    <td>
-                      Dakota Rice
-                    </td>
-                    <td>
-                      Niger
-                    </td>
-                    <td>
-                      Oud-Turnhout
-                    </td>
-                    <td class="text-center">
-                      $36,738
-                    </td>
+                      <td>2018</td>
+                      <td>27.2</td>
                   </tr>
                   <tr>
-                    <td>
-                      Minerva Hooper
-                    </td>
-                    <td>
-                      Curaçao
-                    </td>
-                    <td>
-                      Sinaai-Waas
-                    </td>
-                    <td class="text-center">
-                      $23,789
-                    </td>
+                      <td>2019</td>
+                      <td>27.9</td>
                   </tr>
                   <tr>
-                    <td>
-                      Sage Rodriguez
-                    </td>
-                    <td>
-                      Netherlands
-                    </td>
-                    <td>
-                      Baileux
-                    </td>
-                    <td class="text-center">
-                      $56,142
-                    </td>
+                      <td>2020</td>
+                      <td>25.2</td>
                   </tr>
                   <tr>
-                    <td>
-                      Philip Chaney
-                    </td>
-                    <td>
-                      Korea, South
-                    </td>
-                    <td>
-                      Overland Park
-                    </td>
-                    <td class="text-center">
-                      $38,735
-                    </td>
+                      <td>2021</td>
+                      <td>26.0</td>
                   </tr>
                   <tr>
-                    <td>
-                      Doris Greene
-                    </td>
-                    <td>
-                      Malawi
-                    </td>
-                    <td>
-                      Feldkirchen in Kärnten
-                    </td>
-                    <td class="text-center">
-                      $63,542
-                    </td>
+                      <td>2022</td>
+                      <td>26.2</td>
                   </tr>
                   <tr>
-                    <td>
-                      Mason Porter
-                    </td>
-                    <td>
-                      Chile
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-center">
-                      $78,615
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      Jon Porter
-                    </td>
-                    <td>
-                      Portugal
-                    </td>
-                    <td>
-                      Gloucester
-                    </td>
-                    <td class="text-center">
-                      $98,615
-                    </td>
+                      <td>2023</td>
+                      <td>23.5</td>
                   </tr>
                 </tbody>
               </table>
@@ -270,6 +121,7 @@
       </div>
     </div>
   </div>
+  
 
 {% endblock content %}
 

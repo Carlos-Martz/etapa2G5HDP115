@@ -1,5 +1,5 @@
 
-    <div class="sidebar">
+    <div class="sidebar" data="blue">
         <!--
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
       -->
@@ -12,14 +12,42 @@
             <ul class="nav">
                 <li class="{% if 'index' in segment %} active {% endif %} ">
                     <a href="/">
-                        <i class="tim-icons icon-chart-pie-36"></i>
-                        <p><strong style="font-size: larger;">Dashboard</strong></p>
+                        <i class="tim-icons icon-shape-star"></i>
+                        <p><strong style="font-size: larger;">INICIO</strong></p>
                     </a>
                 </li>
                 <li class="{% if 'notifications' in segment %} active {% endif %}">
                     <a href="/notifications.html">
-                        <i class="tim-icons icon-bell-55"></i>
-                        <p><strong style="font-size: larger;">Notificaciones</strong></p>
+                        <i class="tim-icons icon-chart-bar-32"></i>
+                        <p><strong style="font-size: larger;">TENDENCIAS</strong></p>
+                    </a>
+                </li>
+                <li class="{% if 'tables' in segment %} active {% endif %}">
+                    <a href="/tables.html">
+                        <i class="tim-icons icon-puzzle-10"></i>
+                        <p><strong style="font-size: larger;">ESTADÍSTICAS</strong></p>
+                    </a>
+                </li>
+                <li class="{% if 'typography' in segment %} active {% endif %}">
+                    <a href="/typography.html">
+                        <i class="tim-icons icon-align-center"></i>
+                        <p><strong style="font-size: larger;">ANÁLISIS</strong></p>
+                    </a>
+                </li>
+                
+                <!--
+                
+                <li class="{% if 'notifications' in segment %} active {% endif %}">
+                    <a href="/notifications.html">
+                        <i class="tim-icons icon-align-center"></i>
+                        <p><strong style="font-size: larger;">ANÁLISIS</strong></p>
+                    </a>
+                </li>
+
+                <li class="{% if 'typography' in segment %} active {% endif %}">
+                    <a href="/typography.html">
+                        <i class="tim-icons icon-align-center"></i>
+                        <p><strong style="font-size: larger;">Otro</strong></p>
                     </a>
                 </li>
                 <li class="{% if 'user' in segment %} active {% endif %}">
@@ -28,19 +56,8 @@
                         <p><strong style="font-size: larger;">Perfil del usuario</strong></p>
                     </a>
                 </li>
-                <li class="{% if 'tables' in segment %} active {% endif %}">
-                    <a href="/tables.html">
-                        <i class="tim-icons icon-puzzle-10"></i>
-                        <p><strong style="font-size: larger;">Lista de tablas</strong></p>
-                    </a>
-                </li>
-                <li class="{% if 'typography' in segment %} active {% endif %}">
-                    <a href="/typography.html">
-                        <i class="tim-icons icon-align-center"></i>
-                        <p>Tipografía</p>
-                    </a>
-                </li>
-                <!--<li>
+
+                <li>
                     <a href="{% url 'login' %}">
                         <i class="tim-icons icon-button-power"></i>
                         <p>Cierre de sesión</p>
