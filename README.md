@@ -9,14 +9,24 @@ $ cd etapa2G5HDP115
 
 <br />
 
-### Configuración para `Unix`, `MacOS` 
-
 > Instalar módulos mediante `VENV'
+
+### Configuración para `Unix`, `MacOS` 
 
 ```bash
 $ virtualenv env
 $ source env/bin/activate
 $ pip3 install -r requirements.txt
+```
+
+<br />
+
+### Configuración para `Windows` 
+
+```bash
+$ python -m venv env
+$ .\env\Scripts\activate
+$ pip install -r requirements.txt
 ```
 
 <br />
